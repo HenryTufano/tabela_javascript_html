@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formulario </title>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        #idPessoa{
+            font: 14px verdana;
+            margin-left: 45%;
+            margin-top: 160px;
+        }
+        #dtPessoa{
+            font: 14px verdana;
+            margin-left: 35%;
+        }
+        table tr td{
+            width: 140px;
+        }
+    </style>
+ </head>
+ <body>
+     <div id = idPessoa>
+         <form name="Fpessoas">
+             <label>nome</label><br/>
+             <input type="text" name="txtnome"/><br>
+             <label>email</label><br/>
+             <input type="text" name="txtemail"/><br>
+             <label>telefone</label><br/>
+             <input type="text" name="txttelefone"/><br/>
+             <input type="button" value="adiciona pessoa" onclick="cadPessoa(txtnome.value,txtemail.value,txttelefone.value)"><br>
+         </form>
+     </div>
+     <br><br>
+     <div id="dtPessoa">
+         <table id="tbPessoas">
+             <thead>
+                 <tr>
+                    <td>codigo</td> 
+                    <td>email</td>
+                    <td>telefone</td>
+             </thead>
+
+         </table>
+
+     </div>
+ </body>
+</html>
